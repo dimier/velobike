@@ -50,7 +50,7 @@ var params = {
         darkbg: "#222222"
     },
     labels: {
-        docTitle: { ru: "Статистика поездок на Велобайках по Москве. Статистика велопрокатов в Москве за 2014", en: "Bike share stats in Moscow, season 2014"},
+        docTitle: { ru: "Статистика поездок на Велобайках по Санкт-Петербургу. Статистика велопрокатов в Санкт-Петербурге за 2014", en: "Bike share stats in Saint Petersburg, season 2014"},
         menuRoutes: { ru: "Маршруты", en: "Routes" },
         menuHeatmap: { ru: "Активность", en: "Activity" },
         menuCalendar: { ru: "Календарь", en: "Timeline" },
@@ -65,8 +65,8 @@ var params = {
         switchLang: { ru: "in English", en: "По-русски" },
         switchLangShort: { ru: "En", en: "Рус" },
         about: { ru: "О проекте", en: "About" },
-        loaderWelcome: { ru: "Поездки на Велобайках в Москве", en: "Bike shares in Moscow"},
-        loaderWelcome2: { ru: "Stats c 9 июня по 11 ноября 2014", en: "Stats from 9 June to 11 November 2014"},
+        loaderWelcome: { ru: "Поездки на Велобайках в Санкт-Петербурге", en: "Bike shares in Saint Petersburg"},
+        loaderWelcome2: { ru: "Статистика c 27 июня по 4 ноября 2014", en: "Stats from 27 June to 4 November 2014"},
         stateLoading: { ru: "Загружаем данные", en: "Loading data" },
         stateAnalyzing: { ru: "Анализируем", en: "Analyzing data" },
         stateMapping: { ru: "Добавляем на карту", en: "Adding data on map" },

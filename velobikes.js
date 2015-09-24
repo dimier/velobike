@@ -1,3 +1,7 @@
+var stationsDataFilename = "data/stations_14.csv";
+var routesDataFilename = "data/data_14.csv";
+var weatherDataFilename = "data/weather_14.csv";
+
 //work with url params
 var Requests = {
     QueryString : function(item){
@@ -110,15 +114,15 @@ ymaps.ready(function () {
     var mapZoom = 12;
     var scale = 1.3;
 
-    mapZoom = window.innerWidth > 1400 ? 13 : mapZoom;
-    mapZoom = window.innerWidth > 1600 ? 14 : mapZoom;
+    mapZoom = window.innerWidth > 1400 ? 12 : mapZoom;
+    mapZoom = window.innerWidth > 1600 ? 13 : mapZoom;
 
     scale = window.innerWidth > 1000 ? 1.5 : scale;
     scale = window.innerWidth > 1400 ? 1.8 : scale;
     scale = window.innerWidth > 1580 ? 2.5 : scale;
 
     var mapParams = {
-        center: [55.745670, 37.605515],
+        center: [59.941107, 30.300449],
         type: 'yandex#satellite',
         controls: [],
         zoom: mapZoom
@@ -327,7 +331,7 @@ ymaps.ready(function () {
     });
 
 //loading stations CSV
-    d3.tsv("data/stations_11.csv?sjsjsj", function (d, i) {
+    d3.tsv(stationsDataFilename, function (d, i) {
 
             //getting data about stations
             //stations.push();
@@ -349,7 +353,7 @@ ymaps.ready(function () {
         function (d) {
             loaderState.text(params.labels.stateLoading[lang]);
 
-            d3.tsv("data/weather2.csv", function (d, i) {
+            d3.tsv(weatherDataFilename, function (d, i) {
                 weather[d.dt] = {
                     dt: d.dt,
                     state: d.state,
@@ -372,7 +376,7 @@ ymaps.ready(function () {
         var rt; //string index for routes array
         var day; //formatted date
 
-        d3.tsv("data/data_13.csv?asgssshg", function (d) {
+        d3.tsv(routesDataFilename, function (d) {
 
                 //totalcounter;
                 totalRoutes++;
@@ -469,7 +473,7 @@ ymaps.ready(function () {
                             })
                     }
 
-                    if (stations[m].total > 0) stationsOrdered.push(stations[m]);
+                    stationsOrdered.push(stations[m]);
 
                     //sort routes in station
                     stations[m].routes.sort(function (a, b) {
