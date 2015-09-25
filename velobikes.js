@@ -239,7 +239,7 @@ ymaps.ready(function () {
 
     var dateFormat = d3.time.format("%Y%m%d%H"),
         dateFormatDay = d3.time.format("%Y%m%d"), //YYYYMMDDHH date format for acivity calendar
-        startDate = dateFormat.parse("2014070400"),
+        startDate = dateFormat.parse("2014070300"),
         endDate = dateFormat.parse("2014110500"),
         allDays = Math.floor((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)),
         tickWidth = Math.floor((window.innerWidth - 40) / allDays);
