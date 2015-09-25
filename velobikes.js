@@ -849,7 +849,7 @@ ymaps.ready(function () {
                             radius: w
                         }
                     });
-                console.log(station.code + ': ' + station.lat + ' ' + station.lon);
+                // console.log(station.code + ': ' + station.lat + ' ' + station.lon);
                 
 				pl.events.add('click', function (e) {
                     getStationPanel(e.get('target').properties.get('id'));
