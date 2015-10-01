@@ -75,6 +75,7 @@ var params = {
         totalTrips: { ru: "всего", en: "total"},
         activitiesByDay: { ru: "Активность станции по дням", en: "Station activity by days"},
         activitiesByHour: { ru: "Активность станции по часам", en: "Station activity by hours"},
+        loopStats: { ru: "Процент поездок, закончившихся на той же станции: ", en: ""},
         baseDirections: { ru: "Основные направления", en: "Base directions"},
         totalHeatmap: { ru: "Всего", en: "Total"},
         since: { ru: "c ", en: "since " },

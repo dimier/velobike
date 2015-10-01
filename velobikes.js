@@ -343,6 +343,7 @@ ymaps.ready(function () {
                 lat: d.Lat,
                 total: 0,
                 totalReturns: 0,
+                loops: 0,
                 byHour: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 byDay: [0, 0, 0, 0, 0, 0, 0],
                 byDate: [],
@@ -410,6 +411,9 @@ ymaps.ready(function () {
                 stations[d.f].total++;
                 stations[d.t].totalReturns++;
 
+                if (d.f == d.t) {
+                    stations[d.f].loops++;
+                }
 
 
                 stations[d.f].byHour[day.getHours()]++;
@@ -680,6 +684,10 @@ ymaps.ready(function () {
             stationPanelContent.append("div").attr("class", "station-subtitle").text(params.labels.activitiesByHour[lang]);
             var graphByHours = stationPanelContent.append("svg").attr("width", 300).attr("height", 100);
 
+            //adding loop statistics
+            loop_ratio = stations[code].loops / stations[code].total;
+            stationPanelContent.append("div").attr("class", "station-subtitle").style({'text-align': 'left'})
+                .text(params.labels.loopStats[lang] + Math.round(loop_ratio*100) + '%');
 
             //y-scale function (for both graphs
             var y = d3.scale.linear().range([80, 0]);
