@@ -50,7 +50,7 @@ var params = {
         darkbg: "#222222"
     },
     labels: {
-        docTitle: { ru: "Статистика поездок на Велобайках по Санкт-Петербургу. Статистика велопрокатов в Санкт-Петербурге за 2014", en: "Bike share stats in Saint Petersburg, season 2014"},
+        docTitle: { ru: "Статистика велопроката в Санкт-Петербурге за 2014", en: "Bike share stats in Saint Petersburg, season 2014"},
         menuRoutes: { ru: "Маршруты", en: "Routes" },
         menuHeatmap: { ru: "Активность", en: "Activity" },
         menuCalendar: { ru: "Календарь", en: "Timeline" },
