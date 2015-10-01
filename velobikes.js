@@ -45,7 +45,8 @@ if(bowser.webkit) heatmapSpeed = 180; //the fastest possible
 
 
 //detecting language
-var lang = detectLang();
+// var lang = detectLang();
+var lang = "ru";
 
 function detectLang() {
     var tlang = "en";
