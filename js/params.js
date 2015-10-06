@@ -50,7 +50,7 @@ var params = {
         darkbg: "#222222"
     },
     labels: {
-        docTitle: { ru: "Анализ использования велопроката в Санкт-Петербурге за 2014", en: "Bike share stats in Saint Petersburg, season 2014"},
+        docTitle: { ru: "Анализ использования городского велопроката в Санкт-Петербурге за 2014", en: "Bike share stats in Saint Petersburg, season 2014"},
         menuRoutes: { ru: "Маршруты", en: "Routes" },
         menuHeatmap: { ru: "Активность", en: "Activity" },
         menuCalendar: { ru: "Календарь", en: "Timeline" },
@@ -65,7 +65,7 @@ var params = {
         switchLang: { ru: "in English", en: "По-русски" },
         switchLangShort: { ru: "En", en: "Рус" },
         about: { ru: "О проекте", en: "About" },
-        loaderWelcome: { ru: "Анализ использования велопроката в Санкт-Петербурге", en: "Bike shares in Saint Petersburg"},
+        loaderWelcome: { ru: "Анализ использования городского велопроката в Санкт-Петербурге", en: "Bike shares in Saint Petersburg"},
         loaderWelcome2: { ru: "Данные c 4 июля по 31 октября 2014 года", en: "Stats from 27 June to 4 November 2014"},
         stateLoading: { ru: "Загружаем данные", en: "Loading data" },
         stateAnalyzing: { ru: "Анализируем", en: "Analyzing data" },
